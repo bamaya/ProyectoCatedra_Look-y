@@ -22,7 +22,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 # Autores
 >Aguillón Amaya, Byron Enrique
 
->Vladimir Alexander Ayala Sánchez
+>Ayala Sánchez Vladimir Alexander
 
 >Hernández Martínez Irma Gabriela 
 
