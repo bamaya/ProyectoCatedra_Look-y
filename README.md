@@ -1,4 +1,4 @@
-## PROYECTODSP2022
+## PROYECTODPS2022
 Creación de una APP para reservación de hoteles con el objetivo de cumplir con el desarrollo del proyecto de catedra de la materia de Diseño y Programación de Software Multiplataforma de la Universidad Don Bosco, El Salvador. 
 
 # Herramientas
@@ -7,6 +7,18 @@ Creación de una APP para reservación de hoteles con el objetivo de cumplir con
 >github
 
 >Git
+
+>Android Studio
+
+>Firebase
+
+>Node.js
+
+>ExpoDev
+
+>React Native
+
+>Software Developer Kit de Java
 
 # Licencia
 Este proyecto utiliza la licencia Reconocimiento-No Comercial-Sin Derivados 2.5(CC BY-NC-ND 2.5) que indica:
