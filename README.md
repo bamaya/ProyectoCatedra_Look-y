@@ -32,19 +32,20 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
 # Autores
->Aguillón Amaya, Byron Enrique
+>Aguillón Amaya, Byron Enrique 04T
 
->Ayala Sánchez Vladimir Alexander
+>Ayala Sánchez, Vladimir Alexander 04T
 
->Hernández Martínez Irma Gabriela 
+>Hernández Martínez, Irma Gabriela 04T
 
->Pérez Cabrera Carlos Moisés 
+>Pérez Cabrera, Carlos Moisés 04T
 
->Sura Jiménez Victoria Margarita 
+>Sura Jiménez, Victoria Margarita 04T
 
 
 # Enlaces de Interes 
 >Tablero en Trello -->
+> Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
 
 >Enlace a Mockups-->
 
