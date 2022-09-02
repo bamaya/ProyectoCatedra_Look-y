@@ -32,15 +32,15 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
 # Autores ✒️
->Aguillón Amaya, Byron Enrique     04T   Programación, diseño y lógica
+>Aguillón Amaya, Byron Enrique     -  04T  -  Programación, diseño y lógica
 
->Ayala Sánchez, Vladimir Alexander 04T   Programación, diseño y lógica
+>Ayala Sánchez, Vladimir Alexander -  04T  -  Programación, diseño y lógica
 
->Hernández Martínez, Irma Gabriela 04T   Programación, diseño y lógica
+>Hernández Martínez, Irma Gabriela -  04T  -  Programación, diseño y lógica
 
->Pérez Cabrera, Carlos Moisés      04T   Programación, diseño y lógica
+>Pérez Cabrera, Carlos Moisés      -  04T  -  Programación, diseño y lógica
 
->Sura Jiménez, Victoria Margarita  04T   Programación, diseño y lógica
+>Sura Jiménez, Victoria Margarita  -  04T  -  Programación, diseño y lógica
 
 
 # Enlaces de Interes 👀
