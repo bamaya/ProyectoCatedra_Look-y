@@ -7,9 +7,9 @@ import RNPickerSelect from 'react-native-picker-select';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Reserva = props => {
-  const NavigateToLogin = props => {
-    props.navigation.navigate('Login');
+const Decameron = props => {
+  const NavigateToHome = props => {
+    props.navigation.navigate('Root');
   }
   return (
 <View style={styles.bkir}>
@@ -38,9 +38,9 @@ const Reserva = props => {
                         source={require('../img/Hotel4.jpg')} />
                 </View>
             </ScrollView>
-       
+           
             <View style={styles.inputAndroid}>
-      
+   
       <RNPickerSelect
        
        // onValueChange={(value) => guardarTipo(value)}
@@ -53,9 +53,11 @@ const Reserva = props => {
           { label: 'Superior', value:  'Superior'},
         ]}
       />
+   
+     
     </View>
-         
-      
+
+   
        <View>
      
     <Text style={styles.label}>       Cantidad de personas:</Text>
@@ -66,19 +68,23 @@ const Reserva = props => {
     
     />
     
-    <TouchableOpacity style={styles.btn2} onPress={() => NavigateToReserva(props) }>
+    <Text style={styles.label1}>       Fecha de hospedaje:</Text>
+    
+    
+    
+    <TouchableOpacity style={styles.btn2} onPress={() => NavigateToHome(props) }>
           <Text style={styles.title2} >Reservar</Text>
         </TouchableOpacity>
-       
+
+        
     </View>
     
-    
     </View>
-     
+
   );
 }
 
-export default Reserva;
+export default Decameron;
 
 const styles = StyleSheet.create({
   banner:{
@@ -129,7 +135,7 @@ btn2: {
         position: 'absolute',
         width: 150,
         height: 51,
-        left: 125,
+        left: 123,
         top: 310,
         alignItems:'center',
         borderTopLeftRadius: 100,
@@ -172,6 +178,14 @@ ciudad:{
     marginHorizontal:-10,
     
     },
+    label1: {
+      fontWeight: 'bold',
+      fontSize: 18,
+      marginTop: -150,
+      color:'white',
+      marginHorizontal:-10,
+      
+      },
 input: {
   marginHorizontal:15,
     marginTop: 10,
@@ -206,8 +220,8 @@ input: {
     flex: 1
   },
   inputAndroid: {
+    marginTop:10,
     fontSize: 16,
-
     paddingHorizontal: 20,
     paddingVertical: 8,
     borderWidth: 0.5,

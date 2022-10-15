@@ -6,14 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Zona = props =>{
-  const NavigateToReserva=props=>{
-    props.navigation.navigate('Reserva');
+  const NavigateToDecameron=props=>{
+    props.navigation.navigate('Decameron');
   }
   return(
       <View style={styles.container}>
         <Text style={styles.title1}>ZONAS A ESCOGER</Text>
-        <TouchableOpacity style={styles.btn2} onPress={() => NavigateToReserva(props) }>
-          <Text style={styles.title1} >Reserva</Text>
+        <TouchableOpacity style={styles.btn2} onPress={() => NavigateToDecameron(props) }>
+          <Text style={styles.title1} >Decameron</Text>
         </TouchableOpacity>
 
         <StatusBar style="auto" />
@@ -42,15 +42,16 @@ const styles = StyleSheet.create({
   },
   btn2: {
     position: 'absolute',
-    width: 130,
+    width: 170,
     height: 51,
-    left: 125,
+    left: 111.5,
     top: 786,
     borderTopLeftRadius: 100,
     borderTopRightRadius: 100,
     borderBottomLeftRadius: 100,
     borderBottomRightRadius: 100,
     backgroundColor: '#5F7ADB',
-    marginTop:-200
+    marginTop:-200,
+    alignItems:'center',
   },
 });
