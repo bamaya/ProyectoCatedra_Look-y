@@ -6,6 +6,7 @@ import Bienvenida from './Components/bienvenida';
 import Registro from './Components/registro';
 import Login from './Components/login';
 import Home from './src/screens/home';
+import Reserva from './src/screens/reserva';
 import Navigation from './src/navigation/navigation';
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
         <Stack.Screen name="Registro" component={Registro} options={{headerShown: false}} />
         <Stack.Screen name="Root" component={Navigation} options={{headerShown: false}}  />
+        <Stack.Screen name="Reserva" component={Reserva} options={{headerShown: false}}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

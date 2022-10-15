@@ -1,17 +1,26 @@
 import react from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text,  TouchableOpacity,View} from 'react-native';
 import * as Font from 'expo-font';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function Zona() {
-  return (
+const Zona = props =>{
+  const NavigateToReserva=props=>{
+    props.navigation.navigate('Reserva');
+  }
+  return(
       <View style={styles.container}>
         <Text style={styles.title1}>ZONAS A ESCOGER</Text>
+        <TouchableOpacity style={styles.btn2} onPress={() => NavigateToReserva(props) }>
+          <Text style={styles.title1} >Reserva</Text>
+        </TouchableOpacity>
+
         <StatusBar style="auto" />
       </View>
   );
 }
-
+export default Zona;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -30,5 +39,18 @@ const styles = StyleSheet.create({
     fontFamily: 'Open-sans-condensed-bold',
     color: '#FFFFFF',
     fontStyle: 'normal',
+  },
+  btn2: {
+    position: 'absolute',
+    width: 130,
+    height: 51,
+    left: 125,
+    top: 786,
+    borderTopLeftRadius: 100,
+    borderTopRightRadius: 100,
+    borderBottomLeftRadius: 100,
+    borderBottomRightRadius: 100,
+    backgroundColor: '#5F7ADB',
+    marginTop:-200
   },
 });
