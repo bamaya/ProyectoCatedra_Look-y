@@ -57,7 +57,7 @@ const Bienvenida = props => {
     arrow: {
       position: 'absolute',
       left: 275,
-      top: 725,
+      top: '80%',
     },
   });
   

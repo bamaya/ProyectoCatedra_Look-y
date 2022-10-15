@@ -4,25 +4,24 @@ import { StyleSheet, Text, View, TouchableHighlight} from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import * as Font from 'expo-font';
+import Zona2 from './zona';
+import Oriental from './oriental';
+import Central from './central';
+import Occidental from './occidental';
 
 const Stack = createNativeStackNavigator();
-const Zona2 = props => {
-    const NavigateToZona= (props,lugar) => {
-        props.navigation.navigate(lugar);
-      }
+export default function Zona() {
   return (
-    <View style={styles.container}>
-        <TouchableHighlight style={styles.button} onPress={() => {NavigateToZona(props,'oriental');}}>
-          <Text style={styles.title1}>Zona Oriental</Text>
-        </TouchableHighlight>
-        <TouchableHighlight style={styles.button} onPress={() => {NavigateToZona(props,'central');}}>
-          <Text style={styles.title1}>Zona Central</Text>
-        </TouchableHighlight>
-        <TouchableHighlight style={styles.button} onPress={() => {NavigateToZona(props,'occidental');}}>
-          <Text style={styles.title1}>Zona Occidental</Text>
-        </TouchableHighlight>
-        <StatusBar style="auto" />
-    </View>
+    <Stack.Navigator
+    screenOptions={{
+    headerShown: false
+  }}
+    >
+    <Stack.Screen name="zona2" component={Zona2} />
+    <Stack.Screen name="oriental" component={Oriental} />
+    <Stack.Screen name="central" component={Central} />
+    <Stack.Screen name="occidental" component={Occidental} />
+  </Stack.Navigator>
   );
 }
 
@@ -53,5 +52,3 @@ const styles = StyleSheet.create({
     width: '90%',
   }
 });
-
-export default Zona2;
