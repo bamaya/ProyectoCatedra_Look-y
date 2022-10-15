@@ -1,17 +1,44 @@
-import react from 'react';
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight,ScrollView,Image, TextInput} from 'react-native';
+import { StyleSheet, Text,Button, View, TouchableOpacity, TouchableHighlight,ScrollView,Image, TextInput, Platform} from 'react-native';
 import * as Font from 'expo-font';
 import bkr from '../img/layer_reserva.png';
 import RNPickerSelect from 'react-native-picker-select';
-
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import DateTimePicker from '@react-native-community/datetimepicker';
+
+
+
+
+
 
 const Decameron = props => {
   const NavigateToHome = props => {
     props.navigation.navigate('Root');
   }
+  const [date,setDate] = useState(new Date());
+const [mode,setMode] = useState ('date');
+const [show,setShow]=useState (false);
+const [text,setText]= useState ('Empty');
+
+const onChange = (event,selectedDate)=>{
+  const currentDate = selectedDate || date;
+  setShow(Platform.OS === 'ios');
+  setDate(currentDate);
+  let tempDate = new Dare(currentDate);
+  let fDate = tempDate.getDate() + '/' + (tempDate.getMonth() + 1)+ '/' + tempDate.getFullYear();
+  let fTime= 'Hours' + tempDate.getHours() + '| Minutes: ' + tempDate.getMinutes();
+  setText(fDate + '\n' + fTime) 
+
+  console.log(fDate + ' (' + fTime + ')')
+}
+
+const showMode = (currentMode)=>{
+  setShow(true);
+  setMode(currentMode);  
+}
   return (
+   
 <View style={styles.bkir}>
 <Image style={styles.bki} source={bkr}/>
           <Text style={styles.title1} >Hotel Decameron Salinitas</Text>
@@ -57,7 +84,7 @@ const Decameron = props => {
      
     </View>
 
-   
+    
        <View>
      
     <Text style={styles.label}>       Cantidad de personas:</Text>
@@ -67,18 +94,31 @@ const Decameron = props => {
     keyboardType='numeric'
     
     />
-    
+   
     <Text style={styles.label1}>       Fecha de hospedaje:</Text>
-    
-    
+    <Text style={styles.label}>       {text}</Text>
+ <Button title = 'Fecha' onPress={()=>showMode('date')}/>
+ <Text style={styles.label}>          Hora de hospedaje:</Text>
+ <Button title = 'Hora' onPress={()=>showMode('time')}/>
+    {show && (
+      <DateTimePicker
+      testID='dataTimePicker'
+      value={date}
+      mode= {mode}
+      is24Hour={true}
+        display='default'
+        onChange={onChange}
+      />
+
+    )}
     
     <TouchableOpacity style={styles.btn2} onPress={() => NavigateToHome(props) }>
           <Text style={styles.title2} >Reservar</Text>
         </TouchableOpacity>
 
-        
+       
     </View>
-    
+   
     </View>
 
   );
