@@ -26,7 +26,7 @@ export default function Oriental(props) {
   }
   return (
       <ScrollView style={styles.container}>
-        <Text style={styles.title1}>Zona horiental</Text>
+        <Text style={styles.title1}>Zona oriental</Text>
         {hoteles.map((u, i) => {
               return (
                 <React.Fragment key={i}>

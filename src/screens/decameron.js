@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text,Button, View, TouchableOpacity, TouchableHighlight,ScrollView,Image, TextInput, Platform} from 'react-native';
+import { StyleSheet, Text,Button, View, TouchableOpacity, TouchableHighlight,ScrollView,Image, TextInput, Platform, SafeAreaView} from 'react-native';
 import * as Font from 'expo-font';
 import bkr from '../img/layer_reserva.png';
 import RNPickerSelect from 'react-native-picker-select';
@@ -35,12 +35,12 @@ const showMode = (currentMode)=>{
 }
 
   return (
-   
+    
+  
 <View style={styles.bkir}>
-
 <Image style={styles.bki} source={bkr}/>
-
-          <Text style={styles.title1} >Hotel Decameron Salinitas</Text>
+<Text style={styles.title1} >Hotel Decameron Salinitas</Text>
+<ScrollView>
           <ScrollView horizontal>
    
                 <View>
@@ -64,41 +64,42 @@ const showMode = (currentMode)=>{
                         source={require('../img/Hotel4.jpg')} />
                 </View>
                 </ScrollView>
-           
-
-               <View style={styles.inputAndroid}>
-   
-      <RNPickerSelect
-       
-       // onValueChange={(value) => guardarTipo(value)}
-        placeholder={{
-          label: 'Seleccióna tipo de Habitación...',
-          value: null,
-        }}
-        items={[
-          { label: 'Estándar', value: 'Estándar' },
-          { label: 'Superior', value:  'Superior'},
-        ]}
-      />
-    </View>
-       <View>
-    <Text style={styles.label}>       Cantidad de personas:</Text>
-    <TextInput
+         <Text></Text>
+         <Text></Text>       
+ <Text style={styles.label}>       Cantidad de personas:</Text>
+ <TextInput
     style={styles.input}
     keyboardType='numeric'
     />
-    <Text style={styles.label1}>       Fecha de hospedaje:</Text>
-    <Text></Text>
-    <Text></Text>
-    <Text></Text>
-   <TouchableOpacity style = {styles.btn1} onPress={()=>showMode('date')}>
-   <Text style={styles.title2} >Fecha</Text>
+    <View style={styles.inputAndroid}>
+   
+   <RNPickerSelect
+    
+    // onValueChange={(value) => guardarTipo(value)}
+     placeholder={{
+       label: 'Seleccióna tipo de Habitación...',
+       value: null,
+     }}
+     items={[
+       { label: 'Estándar', value: 'Estándar' },
+       { label: 'Superior', value:  'Superior'},
+     ]}
+   />
+ </View>
+  <Text style={styles.label1}>Fecha:</Text>
+  <Text style={styles.label}>       Desde</Text>
+  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
+   <Text style={styles.buttonText} >Fecha</Text>
    </TouchableOpacity>
-   <Text style={styles.label}>          Hora de hospedaje:</Text>
-   <TouchableOpacity style = {styles.btn3} onPress={()=>showMode('time')}>
-   <Text style={styles.title2} >Hora</Text>
+   <Text style={styles.label}>       Hasta</Text>
+  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
+   <Text style={styles.buttonText} >Fecha</Text>
    </TouchableOpacity>
-    {show && (
+   <Text style={styles.label}>      Hora de hospedaje:</Text>
+   <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('time')}>
+   <Text style={styles.buttonText} >Hora</Text>
+   </TouchableOpacity>
+   {show && (
       <DateTimePicker
       testID='dataTimePicker'
       value={date}
@@ -109,34 +110,89 @@ const showMode = (currentMode)=>{
       />
 
     )}
-    <TouchableOpacity style={styles.btn2} onPress={() => NavigateToHome(props) }>
-          <Text style={styles.title2} >Reservar</Text>
-        </TouchableOpacity>
-    </View>
+   
     
+
+        <TouchableOpacity style={{...styles.button2, backgroundColor:'#5F7ADB'}} onPress={() => NavigateToHome(props) }>
+          <Text style={{...styles.buttonText,color:'#ffff',}}> Reservar</Text>
+        </TouchableOpacity>
+      
+       
+        </ScrollView>
     </View>
+   
+    
   );
 }
 
 export default Decameron;
 
 const styles = StyleSheet.create({
-  banner:{
-    height:250,
-    flex:1
+  button:{
+    alignSelf: 'center',
+    borderRadius:10,
+    paddingVertical: 15,
+    marginVertical:10,
+    width: '90%'
+    
   },
-  container: {
-    flex: 0,
-    backgroundColor: '#26292B',
-
+  button1:{
+    alignSelf: 'center',
+    borderRadius:10,
+    paddingVertical: 15,
+    marginVertical:0,
+    width: '90%'
+    
+  },
+  button2:{
+    alignSelf: 'center',
+    borderRadius:10,
+    paddingVertical: 15,
+    marginVertical:100,
+    width: '90%'
+    
+  },
+  button3:{
+    alignSelf: 'center',
+    borderRadius:10,
+    paddingVertical: 15,
+    marginVertical:0,
+    width: '90%'
+    
   },
   bki: {
     position: 'absolute',
     height: 860,
     width: 400,
-    
   }, 
-  
+  buttonText:{
+textAlign:'center',
+color:'#ffff',
+fontSize:16,
+  },
+  ciudad:{
+    width:250,
+    height:300,
+    marginRight:10,
+    marginTop:20
+   },
+   inputAndroid: {
+    marginTop:10,
+    fontSize: 16,
+    paddingHorizontal: 20,
+    paddingVertical:2,
+    borderWidth: 0.5,
+    borderColor: 'black',
+    borderRadius: 8,
+    color: 'black',
+    paddingRight: 30,
+    backgroundColor: '#5F7ADB',
+    foreColor:'#ffff',
+    width:'90%',
+    alignSelf:'center'
+   
+
+  },
   title1: {
     fontSize: 30,
     textAlign: 'left',
@@ -148,189 +204,34 @@ const styles = StyleSheet.create({
     
 
   },
-  title2: {
-    fontSize: 30,
-    textAlign: 'left',
-    fontFamily: 'Open-sans-condensed-bold',
-    color: '#FFFFFF',
-    fontStyle: 'normal',
-
-  marginHorizontal:18
-   
-
-  },
-formulario: {
-    backgroundColor: '#FFF',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    flex: 1
-      },
-
-btn2: {
-        position: 'absolute',
-        width: 300,
-        height: 51,
-        left: 45,
-        top: 320,
-        alignItems:'center',
-        borderTopLeftRadius: 100,
-        borderTopRightRadius: 100,
-        borderBottomLeftRadius: 100,
-        borderBottomRightRadius: 100,
-        backgroundColor: '#5F7ADB',
-        alignContent:'center',
-      
-      
-        
-      },
-      btn3: {
-        position: 'absolute',
-        width: 300,
-        height: 51,
-        left: 45,
-        top: 260,
-        alignItems:'center',
-        borderTopLeftRadius: 100,
-        borderTopRightRadius: 100,
-        borderBottomLeftRadius: 100,
-        borderBottomRightRadius: 100,
-        backgroundColor: '#5F7ADB',
-        alignContent:'center',
-      
-      
-        
-      },
-      btn1: {
-        position: 'absolute',
-        width: 300,
-        height: 51,
-        left: 45,
-        top: 160,
-        alignItems:'center',
-        borderTopLeftRadius: 100,
-        borderTopRightRadius: 100,
-        borderBottomLeftRadius: 100,
-        borderBottomRightRadius: 100,
-        backgroundColor: '#5F7ADB',
-        alignContent:'center',
-      
-      
-        
-      },
-titulo:{
-  fontWeight:'bold',
-  fontSize:24,
-  marginVertical:10,
-},
-titulo2:{
-  fontWeight:'bold',
-  fontSize:18,
-  color:'blue',
-  marginVertical:10
-},
-ciudad:{
-  width:250,
-  height:300,
-  marginRight:10,
-  marginTop:20
- },
-  mejores:{
-    width:'100%',
-    height:200,
-    marginVertical:5
-  },
   label: {
     fontWeight: 'bold',
     fontSize: 18,
-    marginTop: 20,
+ marginVertical:5,
     color:'white',
-    marginHorizontal:-10,
+  },
+  label1: {
+    fontWeight: 'bold',
+    fontSize: 25,
+ marginVertical:15,
+    color:'white',
+    alignSelf:'center'
+  },
+  container: {
     
-    },
-    label1: {
-      fontWeight: 'bold',
-      fontSize: 18,
-      marginTop: -150,
-      color:'white',
-      marginHorizontal:-10,
-      
+    backgroundColor: '#26292B',
+width:'100%',
+  },
+  input: {
+   
+      height: 50,
+      width:350,
+      borderColor: '#e1e1e1',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      backgroundColor:'white',
+      alignSelf:'center'
+   
       },
-input: {
-  marginHorizontal:15,
-    marginTop: 10,
-    height: 50,
-    width:350,
-    borderColor: '#e1e1e1',
-    borderWidth: 1,
-    borderStyle: 'solid',
-    backgroundColor:'white',
-    marginVertical:170,
-    alignContent:'center'
-    },
-
-   
-  listaItem:{
-    flexBasis:'49%'
-  },
-  listado:{
-    flexDirection:'row',
-    flexWrap:'wrap',
-    justifyContent:'space-between'
-  },
-  vistaModal:{
-    backgroundColor:'#000000aa',
-    flex:1
-  },
-  Modal:{
-    backgroundColor:'#fff',
-    margin: 50,
-    padding: 40,
-    borderRaius: 10,
-    flex: 1
-  },
-  inputAndroid: {
-    marginTop:10,
-    fontSize: 16,
-    paddingHorizontal: 20,
-    paddingVertical: 8,
-    borderWidth: 0.5,
-    borderColor: 'black',
-    borderRadius: 8,
-    color: 'black',
-    paddingRight: 30,
-    backgroundColor: '#2e2e2e',
-    foreColor:'#ffff'
-   
-
-  },btnSubmit: {
-    padding: 20,
-    backgroundColor:'#7389fa',
-    marginVertical: 10,
-    marginHorizontal:100,
-  alignItems:'center'  ,
-  foreColor:'white'
+});
   
-  },
-  textoSubmit: {
-    color: '#ffff',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize:16,
-    },
-  subtitulo:{
-    fontWeight: 'bold',
-    fontSize: 20,
-    justifyContent: 'center',
-   color:'#ffff'
-  },
-  button:{
-    width: 75,
-      height: 75,
-      borderRadius: 0,
-      backgroundColor: '#000',
-      color: '#fff'
-   
-  }
-  
-  });
- 
