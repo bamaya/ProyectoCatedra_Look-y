@@ -4,11 +4,9 @@ Creación de una APP para reservación de hoteles con el objetivo de cumplir con
 # Herramientas 🛠️
 >Visual Studio Code
 
->github
+>GitHub
 
 >Git
-
->Android Studio
 
 >Firebase
 
