@@ -50,7 +50,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 > * Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
 
-> * Segunda Fase:
+> * Segunda Fase: https://trello.com/b/7QqHYYcp/segunda-fase
 
 > 📖 Manual Tecnico en la nube-->
 
