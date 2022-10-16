@@ -22,7 +22,7 @@ Creación de una APP para reservación de hoteles con el objetivo de cumplir con
 
 >Software Developer Kit de Java
 
-# Licencia 📄
+## Licencia 📄
 Este proyecto utiliza la licencia Reconocimiento-No Comercial-Sin Derivados 2.5(CC BY-NC-ND 2.5) que indica:
 
 Reconocimiento — Debe reconocer adecuadamente la autoría, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo de cualquier manera razonable, pero no de una manera que sugiera que tiene el apoyo del licenciador o lo recibe por el uso que hace.
@@ -33,7 +33,7 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
-# Autores ✒️
+## Autores ✒️
 > 👨🏻 Aguillón Amaya, Byron Enrique     -  04T  -  Programación, diseño y lógica
 
 > 👨🏻 Ayala Sánchez, Vladimir Alexander -  04T  -  Programación, diseño y lógica
@@ -45,7 +45,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 > 👩🏻 Sura Jiménez, Victoria Margarita  -  04T  -  Programación, diseño y lógica
 
 
-# Enlaces de Interes 👀
+## Enlaces de Interes 👀
 > 📋 Tableros en Trello:
 
 > * Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
