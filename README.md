@@ -14,6 +14,8 @@ Creación de una APP para reservación de hoteles con el objetivo de cumplir con
 
 >Node.js
 
+>Yarn
+
 >ExpoDev
 
 >React Native
@@ -44,7 +46,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 
 # Enlaces de Interes 👀
->Tableros en Trello:
+> 📋 Tableros en Trello:
 
 > * Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
 
@@ -54,6 +56,6 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 > 📖 Manual de Usuario en la nube-->
 
->Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down&page-id=0%3A1
+> 🖼 Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down&page-id=0%3A1
 
 > 🎥 Enlace de video AVANCE -->
