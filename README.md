@@ -4,7 +4,7 @@ Creación de una APP para reservación de hoteles con el objetivo de cumplir con
 # Herramientas 🛠️
 >Visual Studio Code
 
->github
+>GitHub
 
 >Git
 
@@ -32,20 +32,28 @@ SinObraDerivada — Si remezcla, transforma o crea a partir del material, no pue
 No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.
 
 # Autores ✒️
->Aguillón Amaya, Byron Enrique     04T   Programación, diseño y lógica
+>Aguillón Amaya, Byron Enrique     -  04T  -  Programación, diseño y lógica
 
->Ayala Sánchez, Vladimir Alexander 04T   Programación, diseño y lógica
+>Ayala Sánchez, Vladimir Alexander -  04T  -  Programación, diseño y lógica
 
->Hernández Martínez, Irma Gabriela 04T   Programación, diseño y lógica
+>Hernández Martínez, Irma Gabriela -  04T  -  Programación, diseño y lógica
 
->Pérez Cabrera, Carlos Moisés      04T   Programación, diseño y lógica
+>Pérez Cabrera, Carlos Moisés      -  04T  -  Programación, diseño y lógica
 
->Sura Jiménez, Victoria Margarita  04T   Programación, diseño y lógica
+>Sura Jiménez, Victoria Margarita  -  04T  -  Programación, diseño y lógica
 
 
 # Enlaces de Interes 👀
->Tablero en Trello -->
-> Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
+>Tableros en Trello:
 
->Enlace a Mockups-->
+> * Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
 
+> * Segunda Fase:
+
+>Manual Tecnico en la nube-->
+
+>Manual de Usuario en la nube-->
+
+>Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down&page-id=0%3A1
+
+>Enlace pdf Proyecto de catedra fase I -->
