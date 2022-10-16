@@ -44,11 +44,11 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 
 # Enlaces de Interes 👀
->Tablero en Trello -->
+>Tableros en Trello:
 
-> Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
+> * Primera Fase: https://trello.com/b/9k1kO8fA/primera-fase
 
-> Segunda Fase:
+> * Segunda Fase:
 
 >Manual Tecnico en la nube-->
 
