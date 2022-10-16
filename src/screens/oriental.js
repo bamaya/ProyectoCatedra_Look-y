@@ -1,8 +1,10 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Image} from 'react-native';
+import { StyleSheet, Text, View,TouchableOpacity, TouchableHighlight, ScrollView, Image} from 'react-native';
 import * as Font from 'expo-font';
 
+
+  
 const hoteles = [
   {
     Nombre: 'Hotel 1',
@@ -18,7 +20,10 @@ const hoteles = [
   },
 ];
 
-export default function Oriental() {
+export default function Oriental(props) {
+  const NavigateToDecameron=props=>{
+    props.navigation.navigate('Decameron');
+  }
   return (
       <ScrollView style={styles.container}>
         <Text style={styles.title1}>Zona horiental</Text>
@@ -27,14 +32,21 @@ export default function Oriental() {
                 <React.Fragment key={i}>
                   <View>
                   <Text style={styles.subt}>{u.Nombre}</Text>
+                  <TouchableOpacity style={styles.ima} onPress={() => NavigateToDecameron(props) }>
                       <Image style={styles.ima} source={u.src} />
+                      
+          
+        </TouchableOpacity>
+                      
                   </View>
                 </React.Fragment>
               );
         })}
         <StatusBar style="auto" />
+        
       </ScrollView>
   );
+  
 }
 
 const styles = StyleSheet.create({

@@ -7,6 +7,7 @@ import Registro from './Components/registro';
 import Login from './Components/login';
 import Home from './src/screens/home';
 import Navigation from './src/navigation/navigation';
+import Decameron from './src/screens/decameron';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
         <Stack.Screen name="Registro" component={Registro} options={{headerShown: false}} />
         <Stack.Screen name="Root" component={Navigation} options={{headerShown: false}}  />
+        <Stack.Screen name="Decameron" component={Decameron} options={{headerShown: false}}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
