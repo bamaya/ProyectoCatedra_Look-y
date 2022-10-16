@@ -52,9 +52,9 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 > * Segunda Fase: https://trello.com/b/7QqHYYcp/segunda-fase
 
-> 📖 Manual Tecnico en la nube (Avance)-->
+> 📖 Manual Tecnico en la nube (Avance) -->
 
-> 📖 Manual de Usuario en la nube (Avance)-->
+> 📖 Manual de Usuario en la nube (Avance) -->
 
 > 🖼 Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down&page-id=0%3A1
 
