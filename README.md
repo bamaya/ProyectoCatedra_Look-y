@@ -1,25 +1,29 @@
-<p align="center">
-  <a href="https://expo.dev/">
-    <img alt="expo sdk" height="128" src="./src/img//banner.png">
-    <h1 align="center">Expo</h1>
+<h1 align="center">
+  <a href="https://reactnative.dev/">
+    React Native
   </a>
+</h1>
+
+<p align="center">
+  <strong>Learn once, write anywhere:</strong><br>
+  Build mobile apps with React.
 </p>
 
 <p align="center">
-   <a aria-label="SDK version" href="https://www.npmjs.com/package/expo" target="_blank">
-    <img alt="Expo SDK version" src="https://img.shields.io/npm/v/expo.svg?style=flat-square&label=SDK&labelColor=000000&color=4630EB" />
+  <a href="https://github.com/facebook/react-native/blob/HEAD/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
   </a>
-  <a aria-label="Join our forums" href="https://forums.expo.dev" target="_blank">
-    <img alt="Forums" src="https://img.shields.io/badge/Ask%20Questions%20-blue.svg?style=flat-square&logo=discourse&logoWidth=15&labelColor=000000&color=4630EB" />
+  <a href="https://circleci.com/gh/facebook/react-native">
+    <img src="https://circleci.com/gh/facebook/react-native.svg?style=shield" alt="Current CircleCI build status." />
   </a>
-  <a aria-label="Join our Discord" href="https://chat.expo.dev" target="_blank">
-    <img alt="Discord" src="https://img.shields.io/discord/695411232856997968.svg?style=flat-square&labelColor=000000&color=4630EB&logo=discord&logoColor=FFFFFF&label=" />
+  <a href="https://www.npmjs.org/package/react-native">
+    <img src="https://img.shields.io/npm/v/react-native?color=brightgreen&label=npm%20package" alt="Current npm package version." />
   </a>
-  <a aria-label="Expo is free to use" href="https://github.com/expo/expo/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square&color=33CC12" target="_blank" />
+  <a href="https://reactnative.dev/docs/contributing">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
-  <a aria-label="expo downloads" href="http://www.npmtrends.com/expo" target="_blank">
-    <img alt="Downloads" src="https://img.shields.io/npm/dm/expo.svg?style=flat-square&labelColor=gray&color=33CC12&label=Downloads" />
+  <a href="https://twitter.com/intent/follow?screen_name=reactnative">
+    <img src="https://img.shields.io/twitter/follow/reactnative.svg?label=Follow%20@reactnative" alt="Follow @reactnative" />
   </a>
 </p>
 
