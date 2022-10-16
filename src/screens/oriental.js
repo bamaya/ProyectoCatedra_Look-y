@@ -32,7 +32,9 @@ export default function Oriental(props) {
                 <React.Fragment key={i}>
                   <View>
                   <Text style={styles.subt}>{u.Nombre}</Text>
+                 
                   <TouchableOpacity style={styles.ima} onPress={() => NavigateToDecameron(props) }>
+                  
                       <Image style={styles.ima} source={u.src} />
                       
           

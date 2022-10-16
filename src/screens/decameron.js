@@ -113,8 +113,8 @@ const showMode = (currentMode)=>{
    
     
 
-        <TouchableOpacity style={{...styles.button2, backgroundColor:'#5F7ADB'}} onPress={() => NavigateToHome(props) }>
-          <Text style={{...styles.buttonText,color:'#ffff',}}> Reservar</Text>
+        <TouchableOpacity style={{...styles.button2, backgroundColor:'#0d7321'}} onPress={() => NavigateToHome(props) }>
+          <Text style={{...styles.buttonText,color:'#ffff'}}> Reservar</Text>
         </TouchableOpacity>
       
        
