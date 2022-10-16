@@ -1,8 +1,6 @@
-<!-- Banner Image -->
-
 <p align="center">
   <a href="https://expo.dev/">
-    <img alt="expo sdk" height="128" src="./.github/resources/banner.png">
+    <img alt="expo sdk" height="128" src="./src/img//banner.png">
     <h1 align="center">Expo</h1>
   </a>
 </p>
@@ -24,6 +22,8 @@
     <img alt="Downloads" src="https://img.shields.io/npm/dm/expo.svg?style=flat-square&labelColor=gray&color=33CC12&label=Downloads" />
   </a>
 </p>
+
+
 
 # PROYECTODPS2022
 Creación de una APP para reservación de hoteles con el objetivo de cumplir con el desarrollo del proyecto de catedra de la materia de Diseño y Programación de Software Multiplataforma de la Universidad Don Bosco, El Salvador. 
