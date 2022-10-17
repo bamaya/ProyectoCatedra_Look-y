@@ -54,7 +54,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 > 🖼 Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down&page-id=0%3A1
 
-> 🎥 Enlace de video AVANCE -->
+> 🎥 Enlace de video AVANCE --> https://drive.google.com/file/d/11Ha2kKMjT7_o3IrVEJh5ob8Tel3sOIaI/view?usp=sharing
 
 > 📖 Enlace Manual De Usuario (Avance) ---> https://www.canva.com/design/DAFPJLWIht4/zdD9-FebZS4d2uAoUQpwyw/view utm_content=DAFPJLWIht4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
