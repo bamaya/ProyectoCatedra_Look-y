@@ -52,7 +52,7 @@ No hay restricciones adicionales — No puede aplicar términos legales o medida
 
 > * Segunda Fase: https://trello.com/b/7QqHYYcp/segunda-fase
 
-> 🖼 Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=7%3A63&scaling=scale-down
+> 🖼 Enlace a Mockups--> https://www.figma.com/proto/2ZKjvnS1NrnrXPSzOys11F/DPS?node-id=0%3A3&scaling=scale-down
 
 > 🎥 Enlace de video AVANCE --> https://drive.google.com/file/d/11Ha2kKMjT7_o3IrVEJh5ob8Tel3sOIaI/view
 
