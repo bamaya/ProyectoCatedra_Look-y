@@ -5,16 +5,19 @@ import * as Font from 'expo-font';
 
 const hoteles = [
   {
-    Nombre: 'Hotel 1',
-    src: require('../img/central/hotel1.jpg'),
+    Nombre: 'Hotel Real InterContinental',
+    dep: 'San Salvador',
+    src: require('../img/central/intercontinental.jpg'),
   },
   {
-    Nombre: 'Hotel 2',
-    src: require('../img/central/hotel2.jpg'),
+    Nombre: 'Hotel Argueta',
+    dep: 'La Paz',
+    src: require('../img/central/argueta.jpg'),
   },
   {
-    Nombre: 'Hotel 3',
-    src: require('../img/central/hotel3.jpg'),
+    Nombre: 'Acantilados',
+    dep: 'La Libertad',
+    src: require('../img/central/acantilados.jpg'),
   },
 ];
 
@@ -26,8 +29,9 @@ export default function Central() {
           return (
             <React.Fragment key={i}>
               <View>
+              <Image style={styles.ima} source={u.src} />
               <Text style={styles.subt}>{u.Nombre}</Text>
-                  <Image style={styles.ima} source={u.src} />
+              <Text style={styles.subt2}>{u.dep}</Text>
               </View>
             </React.Fragment>
           );
@@ -54,14 +58,21 @@ const styles = StyleSheet.create({
     fontFamily: 'Open-sans-condensed-bold',
     color: '#FFFFFF',
     fontStyle: 'normal',
+    marginBottom: '5%',
   },
   subt: {
     fontSize: 20,
     color: 'white',
     fontWeight: 'bold',
   },
+  subt2: {
+    fontSize: 17,
+    color: 'white',
+    marginBottom: '10%',
+  },
   ima: {
     height: 250,
     width: '100%',
+    marginBottom: '2%',
   }
 });
