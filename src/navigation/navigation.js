@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/home';
-import Zona from '../screens/zona';
+import Zona from '../screens/zonaStack';
 import Ofertas from '../screens/ofertas';
 import Mis_Reservas from '../screens/mis_reservas';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
@@ -37,7 +37,7 @@ export default function Navigation() {
             tabBarActiveBackgroundColor: "#5F7ADB",
         })}>
         <Tab.Screen name="Home" component={Home} options={{headerShown: false}}/>
-        <Tab.Screen name="Buscar Hotel" component={Zona} options={{headerShown: false}}/>
+        <Tab.Screen name="Buscar Hotel" component={Zona} options={{title: 'Zonas',}}/>
         <Tab.Screen name="Ofertas" component={Ofertas} options={{headerShown: false}}/>
         <Tab.Screen name="Mis Reservas" component={Mis_Reservas} options={{headerShown: false}}/>
       </Tab.Navigator>
