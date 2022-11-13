@@ -18,11 +18,13 @@ import Verde from './src/screens/verde';
 import Mamapan from './src/screens/mamapan';
 import Mizata from './src/screens/mizata';
 import SplashScreen from './src/screens/SplashScreen';
+import Datospersonales from './src/screens/datospersonales';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator initialRouteName = "Splash">
         <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
@@ -40,8 +42,13 @@ export default function App() {
         <Stack.Screen name="Verde" component={Verde} options={{headerShown: false}}  />
         <Stack.Screen name="Mamapan" component={Mamapan} options={{headerShown: false}}  />
         <Stack.Screen name="Mizata" component={Mizata} options={{headerShown: false}}  />
+        <Stack.Screen name="Datospersonales" component={Datospersonales} options={{headerShown: false}}  />
       </Stack.Navigator>
+
     </NavigationContainer>
+    
+
+
   );
 }
 

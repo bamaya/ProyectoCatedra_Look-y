@@ -9,8 +9,8 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 
 
 const Acantilados = props => {
-  const NavigateToHome = props => {
-    props.navigation.navigate('Root');
+  const NavigateToDatospersonales = props => {
+    props.navigation.navigate('Datospersonales');
   }
   const [date,setDate] = useState(new Date());
 const [mode,setMode] = useState ('date');
@@ -91,16 +91,57 @@ const showMode = (currentMode)=>{
      ]}
    />
  </View>
-  <Text style={styles.label1}>Fecha:</Text>
-  <Text style={styles.label}>       Desde</Text>
-  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
-   <Text style={styles.buttonText} >Fecha</Text>
-   </TouchableOpacity>
-   <Text style={styles.label}>       Hasta</Text>
-  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
-   <Text style={styles.buttonText} >Fecha</Text>
-   </TouchableOpacity>
+ <View style={styles.inputAndroid}>
+   
+   <RNPickerSelect
+    
  
+     placeholder={{
+       label: 'Seleccióna cantidad de Adultos',
+       value: null,
+     }}
+     items={[
+       { label: '1', value: '1' },
+       { label: '2', value: '2'},
+       { label: '3', value: '3' },
+       { label: '4', value: '4'},
+     ]}
+   />
+
+   
+ </View>
+
+
+ <View style={styles.inputAndroid}>
+   
+   <RNPickerSelect
+    
+ 
+     placeholder={{
+       label: 'Seleccióna cantidad de Niños',
+       value: null,
+     }}
+     items={[
+       { label: '1', value: '1' },
+       { label: '2', value: '2'},
+       { label: '3', value: '3' },
+       { label: '4', value: '4'},
+     ]}
+   />
+
+   
+ </View>
+ 
+
+  <Text style={styles.label1}>Fecha:</Text>
+ 
+  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
+   <Text style={styles.buttonText} >Desde</Text>
+   </TouchableOpacity>
+   
+  <TouchableOpacity style={{...styles.button, backgroundColor:'#5F7ADB'}} onPress={()=>showMode('date')}>
+   <Text style={styles.buttonText} >Hasta</Text>
+   </TouchableOpacity>
    {show && (
       <DateTimePicker
       testID='dataTimePicker'
@@ -115,7 +156,7 @@ const showMode = (currentMode)=>{
    
     
 
-        <TouchableOpacity style={{...styles.button2, backgroundColor:'#0d7321'}} onPress={() => NavigateToHome(props) }>
+        <TouchableOpacity style={{...styles.button2, backgroundColor:'#0d7321'}} onPress={() => NavigateToDatospersonales(props) }>
           <Text style={{...styles.buttonText,color:'#ffff'}}> Reservar</Text>
         </TouchableOpacity>
       
