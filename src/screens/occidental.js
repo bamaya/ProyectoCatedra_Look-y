@@ -1,24 +1,53 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image} from 'react-native';
 import * as Font from 'expo-font';
 
 const hoteles = [
   {
-    Nombre: 'Hotel 1',
-    src: require('../img/occidente/hotel1.jpg'),
+    Nombre: 'Hotel Casa Verde',
+    dep: 'Santa Ana',
+    src: require('../img/occidente/verde.jpg'),
+    id:'Verde'
   },
   {
-    Nombre: 'Hotel 2',
-    src: require('../img/occidente/hotel2.jpg'),
+    Nombre: 'La Casa de Mamapan',
+    dep: 'Ahuachapán',
+    src: require('../img/occidente/mamapan.jpg'),
+    id:'Mamapan'
   },
   {
-    Nombre: 'Hotel 3',
-    src: require('../img/occidente/hotel3.jpg'),
+    Nombre: 'Mizata Point Resort',
+    dep: 'Sonsonante',
+    src: require('../img/occidente/mizata.jpg'),
+    id:'Mizata'
   },
 ];
 
-export default function Occidental() {
+export default function Occidental(props) {
+  const NavigateToVerde=props=>{
+    props.navigation.navigate('Verde');
+  }
+  const NavigateToMamapan=props=>{
+    props.navigation.navigate('Mamapan');
+  }
+  const NavigateToMizata=props=>{
+    props.navigation.navigate('Mizata');
+  }
+  const screen = (id)=>{
+    if(id==='Verde')
+    {
+      NavigateToVerde(props)
+    }
+    if(id==='Mamapan')
+    {
+      NavigateToMamapan(props)
+    }
+    if(id==='Mizata')
+    {
+      NavigateToMizata(props)
+    }
+  }
   return (
     <ScrollView style={styles.container}>
     <Text style={styles.title1}>Zona occidental</Text>
@@ -26,8 +55,11 @@ export default function Occidental() {
           return (
             <React.Fragment key={i}>
               <View>
-              <Text style={styles.subt}>{u.Nombre}</Text>
+              <TouchableOpacity style={styles.ima} onPress={() => screen(u.id) }>
                   <Image style={styles.ima} source={u.src} />
+                  </TouchableOpacity>
+                  <Text style={styles.subt}>{u.Nombre}</Text>
+              <Text style={styles.subt2}>{u.dep}</Text>
               </View>
             </React.Fragment>
           );
@@ -54,14 +86,21 @@ const styles = StyleSheet.create({
     fontFamily: 'Open-sans-condensed-bold',
     color: '#FFFFFF',
     fontStyle: 'normal',
+    marginBottom: '5%',
   },
   subt: {
     fontSize: 20,
     color: 'white',
     fontWeight: 'bold',
   },
+  subt2: {
+    fontSize: 17,
+    color: 'white',
+    marginBottom: '10%',
+  },
   ima: {
     height: 250,
     width: '100%',
+    marginBottom: '2%',
   }
 });
