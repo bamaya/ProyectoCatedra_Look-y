@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image} from 'react-native';
 import * as Font from 'expo-font';
 
 const hoteles = [
@@ -8,20 +8,46 @@ const hoteles = [
     Nombre: 'Hotel Casa Verde',
     dep: 'Santa Ana',
     src: require('../img/occidente/verde.jpg'),
+    id:'Verde'
   },
   {
     Nombre: 'La Casa de Mamapan',
     dep: 'Ahuachapán',
     src: require('../img/occidente/mamapan.jpg'),
+    id:'Mamapan'
   },
   {
     Nombre: 'Mizata Point Resort',
     dep: 'Sonsonante',
     src: require('../img/occidente/mizata.jpg'),
+    id:'Mizata'
   },
 ];
 
-export default function Occidental() {
+export default function Occidental(props) {
+  const NavigateToVerde=props=>{
+    props.navigation.navigate('Verde');
+  }
+  const NavigateToMamapan=props=>{
+    props.navigation.navigate('Mamapan');
+  }
+  const NavigateToMizata=props=>{
+    props.navigation.navigate('Mizata');
+  }
+  const screen = (id)=>{
+    if(id==='Verde')
+    {
+      NavigateToVerde(props)
+    }
+    if(id==='Mamapan')
+    {
+      NavigateToMamapan(props)
+    }
+    if(id==='Mizata')
+    {
+      NavigateToMizata(props)
+    }
+  }
   return (
     <ScrollView style={styles.container}>
     <Text style={styles.title1}>Zona occidental</Text>
@@ -29,7 +55,9 @@ export default function Occidental() {
           return (
             <React.Fragment key={i}>
               <View>
+              <TouchableOpacity style={styles.ima} onPress={() => screen(u.id) }>
                   <Image style={styles.ima} source={u.src} />
+                  </TouchableOpacity>
                   <Text style={styles.subt}>{u.Nombre}</Text>
               <Text style={styles.subt2}>{u.dep}</Text>
               </View>
